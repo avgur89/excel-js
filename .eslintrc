@@ -1,21 +1,22 @@
 {
-	"parser": "babel-eslint",
-	"env": {
-		"es6": true,
-		"browser": true,
-		"node": true
-	},
-	"extends": [
-		"eslint:recommended",
-		"google"
-	],
-	"rules": {
-		"require-jsdoc": "off",
-		"no-unused-vars": "warn",
-		"no-console": "off",
-		"func-names": "off",
-		"no-process-exit": "off",
-		"object-shorthand": "off",
-		"class-methods-use-this": "off"
-	}
+  "root": true,
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "extends": ["google", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "require-jsdoc": "off",
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "func-names": "off",
+    "no-process-exit": "off",
+    "object-shorthand": "off",
+    "class-methods-use-this": "off",
+    "linebreak-style": "off"
+  }
 }
